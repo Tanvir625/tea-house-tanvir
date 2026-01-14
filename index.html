@@ -26,10 +26,13 @@
         },
       };
     </script>
+    <style>
+        .box{margin-top: -100px;}
+    </style>
   </head>
   <body>
     <!-- Hero Container -->
-    <header class="mx-20 mt-10 flex justify-around items-center">
+    <header class="mx-20 mt-10 lg:flex justify-around items-center">
       <!-- Hero Content -->
       <div>
         <h1 class="text-5xl font-extrabold">
@@ -51,7 +54,7 @@
         <img class="w-full" src="images/banner.png" alt="" />
         <!-- card -->
         <div
-          class="flex justify-center items-center rounded bg-white shadaw-lg px-4 py-2 drop-shadow-xl absolute top-100 left-40">
+          class="flex justify-center items-center rounded bg-white shadaw-lg px-4 py-2 drop-shadow-xl absolute left-40 box">
           <div>
             <div><i class="fa-solid fa-star text-2xl text-amber-500"></i></div>
           </div>
@@ -64,42 +67,59 @@
       </div>
     </header>
 
-    <main class="mx-22 mr-20 mt-10">
-      <h2>Our Featured Products</h2>
-      <p>
-        There are many variations of passages of Lorem Ipsum available, but the
-        majority have suffered alteration in some form, by injected humour, or
-        randomised words which don't look even slightly believable.
-      </p>
-      <!-- Product Container -->
-      <div class="grid grid-cols-4 space-x-2">
-        <!-- Product-1 -->
-        <div class="border-2 bg-slate-100 rounded-md">
-          <img class="items-center" src="images/tea-1.png" alt="" />
-          <h3>Milk Tea</h3>
-          <p>Creamer could be replaced <br />by fresh milk</p>
-        </div>
-        <!-- Product-2 -->
-        <div class="border-2 bg-slate-100 rounded-md">
-          <img src="images/tea-1.png" alt="" />
-          <h3>Black Tea</h3>
-          <p>Creamer could be replaced <br />by fresh milk</p>
-        </div>
-        <!-- Product-3 -->
-        <div class="border-2 bg-slate-100 rounded-md">
-          <img src="images/tea-3.png" alt="" />
-          <h3>Milk Tea</h3>
-          <p>Creamer could be replaced <br />by fresh milk</p>
+    <!-- Featured Product section -->
+
+    <section class="py-10 lg:py-30">
+      <div class="text-center mb-8">
+        <!-- title -->
+        <h2 class="text-3xl md:text4xl font-bold mb-2">
+          Our Featured Products
+        </h2>
+        <p class="text-gray-600 mx-auto mt-6 max-w-xl mb-10">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+        </p>
+        <!-- Grid Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center mx-25">
+          <!-- Product card-1 -->
+            <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-1.png" alt="" />
+            <div class="p-4">
+            <h3 class="font-bold text-xl">Milk Tea</h3>
+            <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+          </div>
         </div>
 
-        <!-- Product-4 -->
+        <!-- Product card-2 -->
+            <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-2.png" alt="" />
+            <div class="p-4">
+            <h3 class="font-bold text-xl">Black Tea</h3>
+            <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+            </div>
+            </div>
 
-        <div class="border-2 bg-slate-100 rounded-md">
-          <img src="images/tea-4.png" alt="" />
-          <h3>Milk Tea</h3>
-          <p>Creamer could be replaced <br />by fresh milk</p>
-        </div>
+            <!-- Product card-3 -->
+            <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-3.png" alt="" />
+            <div class="p-4">
+            <h3 class="font-bold text-xl">Lemon Tea</h3>
+            <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+            </div>
+            </div>
+
+            <!-- Product card -->
+            <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-4.png" alt="" />
+            <div class="p-4">
+            <h3 class="font-bold text-xl">Green Tea</h3>
+            <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+            </div>
+            </div>
+
       </div>
-    </main>
+    </section>
+
   </body>
 </html>
